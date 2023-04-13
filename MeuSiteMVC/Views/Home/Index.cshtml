@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-lg-left">
+    <form>
+        <div class="mb-3">
+            <label for="InputName" class="form-label">*Digite seu nome completo:</label>
+            <input type="text" class="form-control" id="InputName" required>
+        </div>
+        <div class="mb-3">
+            <label for="InputEmail" class="form-label">Informe seu e-mail:</label>
+            <input type="text" class="form-control" id="InputEmail">
+        </div>
+        <div class="mb-3">
+            <label for="InputIdade" class="form-label">Informe sua idade:</label>
+            <input type="number" class="form-control" id="InputIdade">
+        </div>
+        <div class="mb-3">
+            <label for="InputData" class="form-label">Informe a melhor data para pagamento:</label>
+            <input type="date" class="form-control" id="InputData">
+        </div>
+        <div class="mb-3">
+            <label>Informe seu gênero sexual:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioGenero" id="radioMasc">
+                <label class="form-check-label" for="flexRadioDefault1">Masculino</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioGenero" id="radioFem">
+                <label class="form-check-label" for="flexRadioDefault2"> Feminino </label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label> Como conheceu nosso site?</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkGoogle">
+                <label class="form-check-label" for="flexCheckDefault"> Google</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkAmigos">
+                <label class="form-check-label" for="flexCheckChecked">Amigos</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkRevJornais">
+                <label class="form-check-label" for="flexCheckChecked">Revistas e Jornais</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>qual a sua cor favorita?</label>
+            <input class="form-control-range" type="color" id="favColor" />
+        </div>
+        <div class="text-center">
+        <button type="submit" class="btn btn-dark">ENVIAR DADOS</button>
+        </div>
+    </form>
+</div>
